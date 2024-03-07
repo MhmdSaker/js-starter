@@ -1,0 +1,17 @@
+.btns button:nth-child(1) {
+    background-color: yellow;
+}
+
+.btns button:nth-child(2) {
+    background-color: orange;
+}
+
+.btns button:active {
+    background-color: aqua;
+}
+
+.btns button::selection {
+    color:brown;
+    background-color: white;
+}
+
