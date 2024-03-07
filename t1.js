@@ -12,3 +12,12 @@ console.log("Total cost: $" + total)
 console.log(`Total cost: $${total}
 Thank you, come again!
 `)
+
+
+var totalItems = (2095 * 2) + (799 * 2)
+var shipping = 499
+var totalItemswShipping = (totalItems + (shipping * 2))
+console.log(totalItems)
+console.log(`Items ${(2+2)}: ${(totalItems) / 100}`)
+console.log(`Total with shipping: ${(2+2)}: ${(totalItemswShipping / 100)}`)
+console.log(`Estimated Tax (10%): ${Math.round((totalItemswShipping * 0.1)) / 100}`)
