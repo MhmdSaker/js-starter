@@ -21,3 +21,5 @@ console.log(totalItems)
 console.log(`Items ${(2+2)}: ${(totalItems) / 100}`)
 console.log(`Total with shipping: ${(2+2)}: ${(totalItemswShipping / 100)}`)
 console.log(`Estimated Tax (10%): ${Math.round((totalItemswShipping * 0.1)) / 100}`)
+
+
