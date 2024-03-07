@@ -1,3 +1,3 @@
-var x = document.getElementsByClassName("btn1")
+let x = document.getElementsByClassName("btn1")
 
 
