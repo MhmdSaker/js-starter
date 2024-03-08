@@ -54,3 +54,4 @@ console.log(fahToCel(86));
 
 console.log(convertTemperature(86, 'F'));
 console.log(convertTemperature(25, 'C'));
+
