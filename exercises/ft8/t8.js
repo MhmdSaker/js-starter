@@ -1,51 +1,40 @@
-let x = 20
+// 8a, 8b, 8c, 8d
 
-
-
-console.log( .length);
-
-
-
-const person = {
-    name: 'Muhammad',
-    age: 20,
-    id: 222101566,
-    method: function fun1() {
-        console.log(`Hello, ${person.name}`)
-    },
-
-    rating: {
-        stars: 2,
-
-    },
-
+const product = {
+    name: 'basketball',
+    price: 2095,
 
 };
 
 
 
-console.log(JSON.stringify(person));
 
-jsonStr = JSON.parse(JSON.stringify(person));
+const product1 = {
+    name: 'basketball',
+    price: 2095,
 
-console.log(jsonStr)
+};
 
- // dot notat.
-person['name']; // bracket notat.
+const product2 = {
+    name: 't-shirt',
+    price: 1500,
 
-const { name } = person;
+};
 
-console.log(name);
-console.log(person['name']);
-console.log(person.rating.stars);
-person.method()
+console.log(product)
 
-
-
-
+product.price += 500;
+console.log(product.price);
 
 
+product['delivery-time'] = 3;
+console.log(product)
 
 
+function comparePrice(obj1, obj2) {
+    if(obj1.price > obj2.price) {
+        return obj2.price;
+    }
+}
 
-
+console.log(comparePrice(product1,product2));
