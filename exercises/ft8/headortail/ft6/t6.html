@@ -12,7 +12,7 @@
 
     <script>
 
-
+        // needs more iter
         // Initialize the score from local storage
         let score = JSON.parse(localStorage.getItem('call')) || { wins: 0, losses: 0 };
 
@@ -27,7 +27,7 @@
                 alert(`You guessed wrong. Correct guess was ${compGuess}. Wins: ${score.wins}, Losses: ${score.losses}`);
             }
 
-            
+
 
             // Update local storage w/ the new score
             localStorage.setItem('call', JSON.stringify(score));
