@@ -4,9 +4,11 @@ const product = {
     name: 'basketball',
     price: 2095,
 
+
 };
 
 
+///////////
 
 
 const product1 = {
@@ -38,3 +40,34 @@ function comparePrice(obj1, obj2) {
 }
 
 console.log(comparePrice(product1,product2));
+
+
+// 8e, 8f, 8g, 8h
+
+function isSameProduct(obj1, obj2) {
+    if((obj1.name === obj2.name) && (obj1.price === obj2.price)) {
+        return true
+    }else {
+        return false
+    }
+}
+
+console.log(isSameProduct(product1, product2));
+
+
+
+console.log("Good Morning".toLowerCase());
+
+{
+    for(let i = 0; i < 2; i++) {
+        console.log('test');
+    }
+
+    let n = 0
+
+    while(n < 2) {
+        console.log('test');
+        n++
+    }
+}
+
