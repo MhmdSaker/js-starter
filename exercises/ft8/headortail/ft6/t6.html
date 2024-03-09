@@ -3,40 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coin Toss Game</title>
     <script src="t6.js"></script>
 </head>
 <body>
-    <button onclick="
-        if(compGuess == 'head') {
-            alert(`Your guess was correct!`);
-        }else {
-            alert(`You guessed wrong, correct guess was ${compGuess}`)
+    <button onclick="playGame('head')">Head</button>
+    <button onclick="playGame('tail')">Tail</button>
+
+    <script>
+
+
+        // Initialize the score from local storage
+        let score = JSON.parse(localStorage.getItem('call')) || { wins: 0, losses: 0 };
+
+        function playGame(guess) {
+            let compGuess = Math.random() < 0.5 ? 'head' : 'tail';
+
+            if (guess === compGuess) {
+                score.wins += 1;
+                alert(`Your guess was correct! Wins: ${score.wins}, Losses: ${score.losses}`);
+            } else {
+                score.losses += 1;
+                alert(`You guessed wrong. Correct guess was ${compGuess}. Wins: ${score.wins}, Losses: ${score.losses}`);
+            }
+
+            
+
+            // Update local storage w/ the new score
+            localStorage.setItem('call', JSON.stringify(score));
         }
-
-
-        
-        
-        
-        ">head</button>
-    <button onclick="
-        
-    if(compGuess == 'tail') {
-        alert(`Your guess was correct!`);
-    } else {
-        alert(`You guessed wrong, correct guess was ${compGuess}`)
-    }
-
-
-    
-    
-    
-    ">tail</button>
+    </script>
 </body>
-
-<script>
-
-
-
-</script>
 </html>
