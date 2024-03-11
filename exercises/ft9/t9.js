@@ -36,6 +36,17 @@ function btn(test) {
 
 
 
+// without key events
+let inp1 = document.querySelector('.inp-1');
+let sub = document.querySelector('.sub');
+let para2 = document.querySelector('.para-2')
 
-
+inp1.addEventListener('keydown', function(event) {
+    if(event.key === 'Enter') {
+        console.log("clicked");
+        let inpVal = inp1.value;
+        para2.innerHTML = `Your name is: ${inpVal}`;
+        
+    }
+});,
 
