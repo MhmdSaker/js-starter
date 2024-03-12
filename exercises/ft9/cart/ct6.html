@@ -20,6 +20,11 @@
     <button onclick="
         updateCart(2);
     ">+2</button>
+
+    <button onclick="
+    updateCart(3);
+    ">+4</button>
+
     
     <button onclick="
         updateCart(4);
@@ -30,37 +35,54 @@
     ">+5</button>
 
     <button onclick="
+    updateCart(-1)
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Remove from Cart</button>
+
+    <button onclick="
+    updateCart(-2);
+    ">-2</button>
+
+    <button onclick="
+    updateCart(-3);
+    ">-3</button>
+
+    <p class="para">Cart Quantity: 0</p>
+
+    <!-- <button onclick="
         cartQuantity = 0;
         console.log(`Cart Quantity is Reset`);
         console.log(`Cart Quantity: ${cartQuantity}`);
         
-    ">Reset Cart</button>
+    ">Reset Cart</button> -->
 
-    <button onclick="
-        updateCart(-1)
-        console.log(`Cart Quantity: ${cartQuantity}`);
-    ">Remove from Cart</button>
+
+
+    <script>
+        let cartQuantity = 0;
+        let para = document.querySelector('.para');
+
+        function updateCart(val) {
+            if(cartQuantity + val > 10) {
+                console.log('Cart is full!');
+                return;
+            }
+    
+    
+            if(cartQuantity + val < 0) {
+                console.log("Not enough items");
+                return
+            }
+            
+            cartQuantity += val;
+
+            para.innerHTML = `Cart Quantity: ${cartQuantity}`;
+        }
+    
+    </script>
+
 </body>
 
-<script>
-    let cartQuantity = 0;
 
-    function updateCart(val) {
-        if(cartQuantity + val > 10) {
-            console.log('Cart is full!');
-            return;
-        }
-
-
-        if(cartQuantity + val < 0) {
-            console.log("Not enough items");
-            return
-        }
-        cartQuantity += val;
-        console.log(`Cart Quantity: ${cartQuantity}`);
-
-    }
-
-</script>
 
 </html>
