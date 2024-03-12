@@ -48,5 +48,8 @@ inp1.addEventListener('keydown', function(event) {
         para2.innerHTML = `Your name is: ${inpVal}`;
         
     }
-});,
+});
 
+
+
+// 9g, 9h, 
