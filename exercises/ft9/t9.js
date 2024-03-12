@@ -53,3 +53,11 @@ inp1.addEventListener('keydown', function(event) {
 
 
 // 9g, 9h, 
+
+let inp3 = document.querySelector('.inp-3');
+let para3 = document.querySelector('.para-3');
+
+inp3.addEventListener('keyup', function() {
+    para3.innerHTML = inp3.value;
+
+}) 
