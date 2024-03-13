@@ -1,0 +1,30 @@
+body {
+    background-color: #212121;
+
+}
+
+* {
+    font-family: Inter;
+}
+
+button {
+    background-color: #343334;
+    min-width: 55px;
+    max-width: auto;
+    border-radius: 50px;
+    color: #fff;
+    border: 0px;
+    font-size: 30px;
+    font-weight: 900px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.op {
+    background-color: #fe9f0b;
+}
+
+.js-calculation {
+    color: #fff;
+    font-size: 20px;
+}
