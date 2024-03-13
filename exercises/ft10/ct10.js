@@ -11,17 +11,29 @@ console.log(check)
 // for single button
 
 toggleBtn.addEventListener('click', function() {
+
     if (toggleBtn.classList.contains('isToggled')) {
-        toggleBtn.classList.remove('isToggled');
+            toggleBtn.classList.remove('isToggled');
     } else {
-        toggleBtn.classList.add('isToggled');
+            toggleBtn.classList.add('isToggled');
     }
+
 });
 
+
+function turnOff() {
+    const previousButton = document.querySelector('.isToggled');
+    if (previousButton) {
+      previousButton.classList.remove('isToggled');
+    }
+  }
 
 
 toggleBtns.forEach(function(element) {
     element.addEventListener('click', function () {
+
+        turnOff();
+        
         if (element.classList.contains('isToggled')) {
             element.classList.remove('isToggled');
         } else {
