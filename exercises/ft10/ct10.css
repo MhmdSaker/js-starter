@@ -23,7 +23,7 @@ body, * {
  
 }
 
-.uber button {
+.uber button, .toggle button {
     background-color: #212121;
     padding: 10px;
     color: white;
@@ -33,6 +33,7 @@ body, * {
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
@@ -41,4 +42,12 @@ body, * {
     padding: 10px;
     color: #111;
     width: 200px;
+}
+
+
+
+.isToggled {
+    background-color: red !important;
+    color: #212121 !important;
+
 }
