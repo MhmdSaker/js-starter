@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid with Spanning Item</title>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .span-item {
+    grid-row: span 3; /* This makes the item span two rows */
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 3</div>
+  <div class="grid-item span-item">Spanning Item</div>
+  <div class="grid-item">Item 5</div>
+  <div class="grid-item">Item 6</div>
+  <div class="grid-item">Item 6</div>
+
+</div>
+
+</body>
+</html>

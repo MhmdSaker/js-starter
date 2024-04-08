@@ -1,0 +1,61 @@
+*, body {
+    font-family: 'Museo 300 Light';
+    width: 0 auto;
+
+
+
+}
+
+#calculator {
+    background-color: #212121;
+    max-width: fit-content;
+    padding: 1px 0px 0px 0px;
+    border-radius: 5px;
+
+
+}
+.field {
+    color: #ffffff;
+    margin: 10px;
+
+} 
+
+.calculations {
+    display: grid;
+    grid-template-columns: repeat(4, 50px); /* same size for button*/
+    grid-template-rows: repeat(3,35px); /* same size for button*/
+
+    /*justify-items: start;*/
+    justify-content: start;
+    align-content: start;
+    background-color: #212121;
+    max-width: fit-content;
+  
+
+}
+
+.calculations button {
+    width: 50px;
+    height: 35px;
+    border: 0.1px solid #b3b3b3;
+    transition: .1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    
+
+}
+
+.calculations button:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.calculations .span-item {
+    grid-row: span 4;
+    height: auto;
+    background-color: #f78259;
+    transition: .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+
+.span-item:hover {
+    background-color: #ff5517 !important;
+}
