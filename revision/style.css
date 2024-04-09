@@ -1,6 +1,10 @@
+html,body {
+    
+}
+
+
 *, body {
     font-family: 'Museo 300 Light';
-    width: 0 auto;
 
 
 
@@ -11,12 +15,17 @@
     max-width: fit-content;
     padding: 1px 0px 0px 0px;
     border-radius: 5px;
+    display: grid;
+    place-items: center;
+    height: 50vh;
+
 
 
 }
-.field {
+.fields {
     color: #ffffff;
     margin: 10px;
+    height: 20px;
 
 } 
 
@@ -46,6 +55,11 @@
 .calculations button:hover {
     background-color: #dcdcdc;
     cursor: pointer;
+
+}
+
+.calculations button:focus{
+    background-color: #dcdcdc;
 }
 
 .calculations .span-item {

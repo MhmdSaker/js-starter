@@ -9,30 +9,35 @@
 <body>
     <div id="calculator">
 
-        <p class="field">0</p>
+        <div class="fields">
+            <p class="field"></p>
+        </div>
         <div class="calculations">
                  
-            <button onclick="update('+');">+</button>
-            <button onclick="update('-');">-</button>
-            <button onclick="update('*');">x</button>
-            <button onclick="update('/');">÷</button>
+            <button class="btn" onclick="update(' + ');">+</button>
+            <button class="btn" onclick="update(' - ');">-</button>
+            <button class="btn" onclick="update(' * ');">x</button>
+            <button class="btn" onclick="update(' / ');">÷</button>
 
-            <button onclick="update('7');">7</button>
-            <button onclick="update('8');">8</button>
-            <button onclick="update('9');">9</button>
-            <button onclick="eva();" class="span-item">=</button>
+            <button class="btn" onclick="update('7');">7</button>
+            <button class="btn" onclick="update('8');">8</button>
+            <button class="btn" onclick="update('9');">9</button>
+            <button onclick="eva()
 
-            <button onclick="update('4');">4</button>
-            <button onclick="update('5');">5</button>
-            <button onclick="update('6');">6</button>
+            " class="span-item">=</button>
+
+            <button class="btn" onclick="update('4');">4</button>
+            <button class="btn" onclick="update('5');">5</button>
+            <button class="btn" onclick="update('6');">6</button>
     
-            <button onclick="update('1');">1</button>
-            <button onclick="update('2');">2</button>
-            <button onclick="update('3');">3</button>
+            <button class="btn" onclick="update('1');">1</button>
+            <button class="btn" onclick="update('2');">2</button>
+            <button class="btn" onclick="update('3');">3</button>
     
-            <button onclick="update('0');">0</button>
-            <button onclick="update('.');">.</button>
-            <button onclick="clear();">C</button>
+            <button class="btn" onclick="update('0');">0</button>
+            <button class="btn" onclick="update('.');">.</button>
+            
+            <button class="clearBtn" onclick="clearDisplay();">AC</button>
     
     
     
@@ -42,8 +47,7 @@
         </div>
     </div>
 
-    <script src="calcfcc.js">
-        
+    <script src="calcfcc.js" async>      
     </script>
 
 </body>
