@@ -1,3 +1,7 @@
+// what did I learn
+
+
+
 let calculation = localStorage.getItem('calculation') || '';
 let field = document.querySelector('.field');
 let clearBtn = document.querySelector('.clearBtn');
@@ -22,13 +26,6 @@ function eva() {
 
 }
 
-btns.forEach(function(element) {
-    element.addEventListener('click', function(){
-        clearBtn.innerHTML = 'C';
-    })
-})
-
-
 
 function clearDisplay() {
     clearBtn.innerHTML = 'AC';
@@ -42,5 +39,20 @@ function clearDisplay() {
 function display() {
     field.innerHTML = calculation;
 }
+
+
+
+
+
+
+
+// validation 1: ac when cleared, c when not cleared
+btns.forEach(function(element) {
+    element.addEventListener('click', function(){
+        clearBtn.innerHTML = 'C';
+    })
+})
+
+
 
 
