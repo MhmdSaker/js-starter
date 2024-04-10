@@ -1,0 +1,23 @@
+*, body {
+    font-family: 'Museo 300 Light';
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+
+    gap: 10px;
+}
+
+.item {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+

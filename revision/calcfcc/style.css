@@ -46,8 +46,8 @@ html, body {
 }
 
 .calculations button {
-    width: 50px;
-    height: 35px;
+    width: 50px; /* same as grid col*/
+    height: 35px; /* same as grid row*/
     border: 0.1px solid #b3b3b3;
     transition: .1s cubic-bezier(0.215, 0.610, 0.355, 1);
     
