@@ -2,20 +2,38 @@ let addBtn = document.querySelector('.add')
 let remBtn = document.querySelector('.rem')
 let field = document.querySelector('.con1 input')
 let para = document.querySelector('.para')
-let para2 = document.querySelector('.para2')
+let paras = document.querySelector('.paras')
 
-const arr = [];
-let inputVal = field.value;
+const arr = ['watch dishes', 'play games'];
+
+let content = '';
 
 
 
-field.addEventListener('keydown', function(event) {
-    if(event.key === 'Enter') {
-        arr.push(field.value);
-        inputVal = field.value
+function rendertoDoList() {
+    for(let i = 0; i < arr.length; i++) {
+        const oneTodo = `<p>${arr[i]}</p>`;
+        content += oneTodo;
 
-        // para2.innerHTML = `Added ${inputVal}$ successfully`;  
+}
 
+}
+
+
+
+rendertoDoList();
+
+console.log(content);
+
+paras.innerHTML = content;
+
+
+
+
+
+field.addEventListener('keydown', function() {
+
+    
 
 
 })
@@ -23,12 +41,12 @@ field.addEventListener('keydown', function(event) {
 
 
 
-field.addEventListener('keyup', function() {
-    para.innerHTML = `Adding ${field.value}$`;
+// field.addEventListener('keyup', function() {
+//     para.innerHTML = `Adding ${field.value}$`;
 
 
 
-})
+// })
 
 
 
