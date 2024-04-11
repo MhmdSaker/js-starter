@@ -19,35 +19,24 @@ function rendertoDoList() {
 
 }
 
-
-
 rendertoDoList();
 
-console.log(content);
+
+
 
 paras.innerHTML = content;
 
 
 
-
-
-field.addEventListener('keydown', function() {
-
-    
-
+field.addEventListener('keydown', function(event) {
+    if(event.key === 'Enter') { 
+        arr.push(field.value);
+        paras.innerHTML += `<p>${field.value}</p>`;
+        console.log(`Added "${field.value}" successfully`) ;
+        field.value = '';
+    }
 
 })
-
-
-
-
-// field.addEventListener('keyup', function() {
-//     para.innerHTML = `Adding ${field.value}$`;
-
-
-
-// })
-
 
 
 remBtn.addEventListener('click', function() {
