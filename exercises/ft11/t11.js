@@ -1,10 +1,11 @@
 let addBtn = document.querySelector('.add')
 let remBtn = document.querySelector('.rem')
 let field = document.querySelector('.con1 input')
-let para = document.querySelector('.para')
+const para = document.querySelectorAll('.paras p')
 let paras = document.querySelector('.paras')
 
-const arr = ['watch dishes', 'play games'];
+
+const arr = ['wash dishes', 'play games'];
 
 let content = '';
 
@@ -20,6 +21,13 @@ function rendertoDoList() {
 }
 
 rendertoDoList();
+
+
+/*
+    watch dishes
+    play games
+
+*/
 
 
 
@@ -38,8 +46,15 @@ field.addEventListener('keydown', function(event) {
 
 })
 
-
 remBtn.addEventListener('click', function() {
-    arr.splice(-1, 1);
+    // This assumes you want to remove a specific task
+    // For this example, let's remove the last task in the list.
+    if (arr.length > 0) {
+        arr.pop(); // Remove last task from the array
 
-})
+        // Re-render the list
+        content = '';
+        rendertoDoList();
+        paras.innerHTML = content;
+    }
+});
