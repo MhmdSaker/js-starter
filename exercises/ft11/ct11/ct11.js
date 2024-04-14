@@ -83,6 +83,43 @@ console.log(arr1);
 console.log(arr2);
 
 
+// 11i, 11j, 11k
+
+function addNum(arr, num) {
+    for(let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i] + num;
+    }
+    return arr;
+}
+
+
+const arrNum = [1, 2, 3];
+addNum(arrNum, 3);
+console.log(arrNum);
+
+
+function addArray(arr1,arr2) {
+    if(arr1.length != arr2.length) {
+        return 0;
+    }
+
+    const arr3 = [];
+    for(let i = 0; i < arr1.length; i++) {
+        
+        arr3[i] = arr1[i] + arr2[i];
+    }
+
+    return arr3;
+
+}
+
+const add1 = [10, 20, 30]
+const add2 = [30, 35, 40]
+
+
+console.log(addArray(add1, add2));
+
+
 
 
 
