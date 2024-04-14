@@ -152,25 +152,73 @@ console.log(countPositive(countPos));
 
 // CHALLENGES : 11l, 11m, 11n
 
-function minMax(arr) {
-    let min = arr[0];
-    let max = arr[0];
+//11l
 
+const minMaxObj = {
+    min: null,
+    max: null,
+};
+
+
+function minMax(arr) {
+    minMaxObj.min = arr[0];
+    minMaxObj.max = arr[0];
 
     for(let i = 0; i < arr.length; i++) {
-        if(arr[i] < min) {
-            min = arr[i];
+        if(arr[i] < minMaxObj.min) {
+            minMaxObj.min = arr[i];
         }
 
-        if(arr[i] > max) {
-            max = arr[i];
+        if(arr[i] > minMaxObj.max) {
+            minMaxObj.max = arr[i];
         }
     }
 
-    console.log(min, max);
+    // validation for 11m -> null for empty
+
+    if(arr[0] == null) {
+        minMaxObj.min = null;
+        minMaxObj.max = null;
+        console.log(minMaxObj);
+    }else {
+        console.log(minMaxObj);
+    }
+
 }
 
 
 
 minMax(countPos);
 
+
+//11m: Update for 11l
+
+// some uses cases for validations purposes
+const mM1 = []
+const mM2 = [3];
+
+minMax(mM1);
+minMax(mM2);
+
+
+//11n
+
+
+const objWord = {
+    apple: 0,
+    grape: 0,
+}
+
+function countWords(words) {
+    for(let i = 0; i < words.length; i++) {
+        if(words[i] == 'apple'){
+            objWord.apple += 1;
+        }else{
+            objWord.grape += 1;
+        }
+    }
+
+    console.log(objWord);
+}
+
+countWords(['apple', 'grape','apple', 'grape','apple','apple']);
