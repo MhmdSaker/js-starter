@@ -85,6 +85,8 @@ console.log(arr2);
 
 // 11i, 11j, 11k
 
+
+//11i
 function addNum(arr, num) {
     for(let i = 0; i < arr.length; i++) {
         arr[i] = arr[i] + num;
@@ -97,7 +99,7 @@ const arrNum = [1, 2, 3];
 addNum(arrNum, 3);
 console.log(arrNum);
 
-
+//11j
 function addArray(arr1,arr2) {
     if(arr1.length != arr2.length) {
         return 0;
@@ -120,6 +122,30 @@ const add2 = [30, 35, 40]
 console.log(addArray(add1, add2));
 
 
+
+//11k , yarab salary keda
+
+
+function countPositive(nums) {
+    let count = 0;
+    for(let i = 0; i < nums.length; i++) {
+        if(nums[i] < 0) {
+            continue;
+        }else {
+            count++;
+        }
+    }
+
+    return count;
+
+
+}
+
+
+const countPos = [1,-3,20,-77,4,20];
+
+
+console.log(countPositive(countPos));
 
 
 
