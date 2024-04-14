@@ -46,11 +46,21 @@ field.addEventListener('keydown', function(event) {
 
 })
 
+/*
+    1. validation
+    2. remove last element in arr
+    3. re-render whole list
+
+    More:
+
+
+*/
+
 remBtn.addEventListener('click', function() {
-    // This assumes you want to remove a specific task
-    // For this example, let's remove the last task in the list.
+
     if (arr.length > 0) {
-        arr.pop(); // Remove last task from the array
+        arr.pop();
+       // Remove last task from the array
 
         // Re-render the list
         content = '';
