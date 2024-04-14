@@ -37,6 +37,52 @@ arraySwap(swap)
 arraySwap(strs)
 
 
+// 11d, 11e, 11f, 11g, 11h
+
+for(let i = 0; i < 10; i = i + 2) {
+    console.log(i + ' ');
+}
+
+for(let i = 5; i > 0; i--) {
+    console.log(i);
+}
+
+
+let i = 0;
+while(i < 10) {
+    console.log(i);
+    i += 2;
+}
+
+
+
+let x = 5;
+while(x > 0) {
+    console.log(x);
+    x--;
+}
+
+
+function addOne(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i] + 1;
+        
+    }
+    return arr;
+}
+
+
+
+const arr1 = [10,20,30];
+const arr2 = [-2,-1,0,99];
+
+addOne(arr1);
+addOne(arr2);
+
+console.log(arr1);
+console.log(arr2);
+
+
 
 
 
