@@ -1,5 +1,31 @@
 * {
-    font-family: 'Museo 500 Light';
+    font-family: 'Dubai';
     
     
+}
+
+.paras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.paras p {
+}
+
+button {
+    margin-left: 10px;
+    color: #212121;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rem {
+    background-color: #da0c0c;
+}
+
+
+.add {
+    background-color: #0cda3c;
 }
