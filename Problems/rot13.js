@@ -4,6 +4,7 @@ function rot13(message) {
 
     for (let i = 0; i < message.length; i++) {
         let charCode = message.charCodeAt(i);
+        console.log(charCode)
 
         // Check if the character is an uppercase letter
         if (charCode >= 65 && charCode <= 90) {
